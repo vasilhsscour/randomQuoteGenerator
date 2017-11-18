@@ -25,3 +25,46 @@ body {
     position: relative;
     background-color: #ACB8FF;
 }
+
+.btns {
+    float: left;
+    position: relative;
+    padding: 60px 80px 20px 80px;
+    color: #2B1B04;
+}
+
+.btn {
+    border: 1px solid #2B1B04;
+    background-color: #ACB8FF;
+    color: #2B1B04;
+}
+
+#newQuote {
+    margin-left: 350px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#author {
+    float: right;
+    padding-right: 50px;
+}
+
+a:hover {
+    background-color: #2B1B04;
+    color: #ACB8FF;
+}
+
+button:hover {
+    background-color: #2B1B04;
+    color: #ACB8FF;
+}
+
+#txt {
+    color: #ACB8FF;
+    font-style: italic;
+    padding-right: 60px;
+    position: relative;
+}

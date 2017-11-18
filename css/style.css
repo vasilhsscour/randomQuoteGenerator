@@ -1,0 +1,27 @@
+body {
+    font-family: Times New Roman, san-serif;
+    line-height: 1.7;
+    background: #2B1B04;
+    color: #2B1B04;
+    text-align: center;
+    padding-right: 140px;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+#ttl {
+    font-family: cursive;
+    font-style: italic;
+    color: #454545;
+}
+
+.box {
+    border-radius: 6px;
+    height: auto;
+    width: 700px;
+    float: left;
+    position: relative;
+    background-color: #ACB8FF;
+}

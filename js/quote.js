@@ -15,6 +15,14 @@ function newQuote() {
         $("#author").html("-" + author);
         // add the link for the twitter button
         $("#tBtn").attr("href", "https://twitter.com/intent/tweet?hashtags=quotes," + author.replace(" ", "") + "&related=freecodecamp&text=" + quote.replace(";", "") + "-" + author);
+        //make the box hide and show
+        $(".box").hide(300, function() {
+            $(this).show(700);
+        });
+        //make the footer fade out and fade in
+        $("#txt").fadeOut(300, function() {
+            $(this).fadeIn(700);
+        });
     });
 }
 

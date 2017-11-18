@@ -26,6 +26,44 @@ function newQuote() {
     });
 }
 
+// change the color of body and the box
+function changeColor() {
+    var backR = Math.floor(Math.random() * 130);
+    var backG = Math.floor(Math.random() * 130);
+    var backB = Math.floor(Math.random() * 130);
+    var boxR = Math.floor(Math.random() * (255 + 1 - 130) + 130);
+    var boxG = Math.floor(Math.random() * (255 + 1 - 130) + 130);
+    var boxB = Math.floor(Math.random() * (255 + 1 - 130) + 130);
+
+    $("body").css({
+        backgroundColor: "rgb(" + backR + ", " + backG + ", " + backB + ")",
+        color: "rgb(" + backR + ", " + backG + ", " + backB + ")"
+    });
+    $(".box").css({
+        backgroundColor: "rgb(" + boxR + ", " + boxG + ", " + boxB + ")"
+    });
+    $(".btn").css({
+        backgroundColor: "rgb(" + boxR + ", " + boxG + ", " + boxB + ")",
+        color: "rgb(" + backR + ", " + backG + ", " + backB + ")",
+        border: "1px solid " + "rgb(" + backR + ", " + backG + ", " + backB + ")"
+    });
+    $("#txt,#ttl").css({
+        color: "rgb(" + boxR + ", " + boxG + ", " + boxB + ")"
+    });
+
+    $(".btn").hover(function() {
+        $(this).css({
+            color: "rgb(" + boxR + ", " + boxG + ", " + boxB + ")",
+            backgroundColor: "rgb(" + backR + ", " + backG + ", " + backB + ")"
+        });
+    }, function() {
+        $(this).css({
+            backgroundColor: "rgb(" + boxR + ", " + boxG + ", " + boxB + ")",
+            color: "rgb(" + backR + ", " + backG + ", " + backB + ")"
+        });
+    });
+}
+
 // when the window is load
 $(document).ready(function() {
     newQuote();
@@ -33,6 +71,7 @@ $(document).ready(function() {
     //when the user click the New Quote button
     $("#newQuote").on("click", function() {
         newQuote();
+        changeColor();
     });
 
     // when the facebook button click.

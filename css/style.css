@@ -68,3 +68,13 @@ button:hover {
     padding-right: 60px;
     position: relative;
 }
+
+footer {
+    color: black;
+    opacity: 0.70;
+}
+
+footer a:hover {
+    opacity: 1;
+    font-style: italic;
+}
